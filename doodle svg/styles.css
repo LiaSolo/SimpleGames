@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: black;
+  background-color: gray;
+  font-family: "Comic Sans MS";
+}
+
+h1 {
+  margin: auto;
+}
+
+label {
+  margin: auto;
+  width: min-content;
+}
+
+button {
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  background-color: rgba(138, 43, 226, 0.1);
+  border-radius: 16px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+dialog {
+  padding: 32px 128px;
+  font-size: 24px;
+  font-weight: 700;
+  background-image: url(assets/spider.svg);
+  background-repeat: no-repeat;
+  border: 2px solid blueviolet;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+dialog[open] {
+  animation: open 1s forwards;
+}
+
+@keyframes open {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.sound {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url(assets/audio-mute.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.sound:active,
+button:active {
+  transform: scale(0.8);
+  transition: 0.1s;
+}
+
+.score {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: auto;
+  width: 560px;
+  height: max-content;
+}
+
+input {
+  margin: auto;
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Comic Sans MS";
+  color: black;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+.parent {
+  background-color: white;
+  position: relative;
+  width: 560px;
+  height: 720px;
+  overflow: hidden;
+  margin: auto;
+  border: 2px solid blueviolet;
+}
+
+.doodle {
+  width: 40px;
+  height: 80px;
+  background-image: url(assets/ghost.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
+  position: absolute;
+  z-index: 10;
+}
+
+.platform {
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  border-radius: 25px;
+  background-size: 300px;
+  background-position: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css"></link>
+        
+    </head>
+    
+    <body>
+        <h1>Ghost Doodle Jump</h1>
+        <dialog id="dialog">
+            <div>
+               Проигрыш!
+                <button id="new-game">Новая игра</button> 
+            </div>
+            
+        </dialog>
+        <div id="main" class="parent"> 
+            <div class="background"> </div>
+        </div>
+        <div class="score">
+            <label>Score:</label>
+            <input type="number" id="score" disabled>   
+            <div id="sound" class="sound">
+                <audio id="audio" src="assets/music.mp3" type="audio/mpeg" autoplay loop> </audio>
+            </div>
+            
+        </div>
+        
+    </body>
+
+<script src="./main.js"></script>  
+    
+</html>

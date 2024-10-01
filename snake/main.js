@@ -116,8 +116,3 @@ function isFree(x, y) {
 drawSnake();
 drawFood();
 let gameId = setInterval(drawGame, 300);
-
-// TODO:
-// умирает
-// еда не появляется под ней
-// редактировать скорость и размер поля

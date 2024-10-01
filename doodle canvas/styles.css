@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+h1 {
+  margin: auto;
+}
+.field {
+  display: grid;
+  grid-template-columns: 320px 200px;
+  box-sizing: border-box;
+  border: 2px black solid;
+  background-color: rgba(100, 148, 237, 0.5);
+  margin: auto;
+}
+
+.input {
+  background: none;
+  border: none;
+  font-size: large;
+  margin: auto;
+  width: 514px;
+}
+
+.parent {
+  position: relative;
+  background-color: pink;
+  width: 500px;
+  height: 700px;
+}
